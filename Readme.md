@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Антон Скрипчак](https://up.htmlacademy.ru/htmlcss/37/user/2209519).
-* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
+* Наставник: `Ирина Малиновская`(https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
