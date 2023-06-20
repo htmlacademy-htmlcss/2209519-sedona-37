@@ -49,12 +49,29 @@ body {
 /* Хедер */
 
 .page-header {
+  display: flex;
+  justify-content: space-around;
   color: #000000;
   background-color: #FFFFFF;
 }
 
 .logo {
   display: block;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-user {
+  display: flex;
+  justify-content: space-between;
 }
 
 .navigation-link {
@@ -65,17 +82,20 @@ body {
   color: #000000;
   background-color: #FFFFFF;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .navigation-button {
   background-color: #756157;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 /* Раздел Герой Главной страницы */
 
 .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   min-height: 485px;
   background-image: url("../images/img/index-background.jpg");
@@ -87,6 +107,10 @@ body {
 
 .advantages {
   text-align: center;
+}
+
+.advantages-item {
+  display: flex;
 }
 
 .hero-title {
@@ -164,6 +188,10 @@ body {
   line-height: 26px;
   font-weight: 400;
   color: #333333;
+}
+
+.recommendations-list {
+  display: flex;
 }
 
 .recommendations-title {
@@ -376,6 +404,10 @@ body {
   border-radius: 4px;
 }
 
+.accommodation-card-container {
+  display: flex;
+}
+
 .accommodation-card {
   border: 1px solid #E6E6E6;
   border-radius: 4px;
@@ -423,4 +455,8 @@ body {
   text-transform: uppercase;
   background-color: #F2F2F2;
   border-radius: 4px;
+}
+
+.pagination {
+  display: flex;
 }
