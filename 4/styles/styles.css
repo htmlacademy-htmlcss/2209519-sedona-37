@@ -18,8 +18,9 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 20px;
-  color: #000000;
   background-color: #F2F2F2;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -35,8 +36,14 @@ body {
   margin: -1px;
   padding: 0;
   border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.nobullet {
+  list-style-type: none;
 }
 
 /* Хедер */
@@ -44,6 +51,10 @@ body {
 .page-header {
   color: #000000;
   background-color: #FFFFFF;
+}
+
+.logo {
+  display: block;
 }
 
 .navigation-link {
@@ -57,16 +68,22 @@ body {
   text-transform: uppercase;
 }
 
+.navigation-button {
+  background-color: #756157;
+  color: #FFFFFF;
+}
+
 /* Раздел Герой Главной страницы */
 
 .hero {
+  text-align: center;
   min-height: 485px;
   background-image: url("../images/img/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
-/* Раздел Преимущества Список */
+/* Раздел Преимущества */
 
 .advantages {
   text-align: center;
@@ -86,18 +103,46 @@ body {
   color: #333333;
 }
 
+/* Раздел Преимущества Список */
+
+.advantages-item-text {
+  background-color: #82B3D3;
+}
+
 .advantages-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  color: #000000;
+  color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 .advantages-description {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  color: #FFFFFF;
+}
+
+.dark {
+  color: #000000;
+}
+
+.dark-33 {
   color: #333333;
+}
+
+.second-1 {
+  background-color: #83B3D31F;
+}
+
+.second-2 {
+  background-color: #83B3D333;
+}
+
+.white {
+  background-image: none;
+  background-color: #FFFFFF;
 }
 
 /* Раздел Рекомендации */
@@ -111,6 +156,7 @@ body {
   line-height: 36px;
   font-weight: 700;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .recommendations-intro-description {
@@ -125,6 +171,7 @@ body {
   line-height: 28px;
   font-weight: 700;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .recommendations-description {
@@ -133,6 +180,8 @@ body {
   font-weight: 400;
   color: #333333;
 }
+
+/* Раздел Поиск */
 
 .search {
   text-align: center;
@@ -143,6 +192,7 @@ body {
   line-height: 36px;
   font-weight: 700;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .search-description {
@@ -156,7 +206,221 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  color: #000000;
+  color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
+  background-color: #756157;
+}
+
+/* Раздел Подписка */
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 414px;
+  background-image: url("../images/img/subscribe-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #382091;
+}
+
+.subscribe-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  padding: 0;
+  border: 0;
+}
+
+.subscribe-description {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin: 0 0 54px;
+  padding: 0;
+  border: 0;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  width: 452px;
+  height: 52px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.field {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #F2F2F2;
+  max-width: 452px;
+  max-height: 52px;
+  margin: 0;
+  padding: 14px 213px 14px 20px;
+  border: 0;
+}
+
+.subscribe-button {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background-color: #82B3D3;
+  max-width: 232px;
+  max-height: 52px;
+  margin: 0;
+  padding: 8px 50px;
+  border: 0;
+}
+
+.filter {
+  background-image: url("../images/img/catalog-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #382091;
+  min-height: 409px;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.breadcrumbs-link {
+  font-size: 16pt;
+  line-height: 21px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter-group {
+  border: 0;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.control {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.range-input {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+}
+
+.button-apply {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  border: 0;
+  text-transform: uppercase;
+}
+
+.button-throw-off {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 0;
+  text-transform: uppercase;
+}
+
+.found {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.select-control {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.accommodation-card {
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+}
+
+.accommodation-card-title {
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.accommodation-card-price-container {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.accommodation-card-button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.button-more {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #756157;
+}
+
+.button-favourites {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #82B3D3;
+}
+
+.accommodation-card-rating {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+  background-color: #F2F2F2;
+  border-radius: 4px;
 }
