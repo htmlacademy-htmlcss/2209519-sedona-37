@@ -152,11 +152,17 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 485px;
+  height: 485px;
   background-image: url("../images/img/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #3F5E72;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-logo-img {
+  margin: 51px 371px 82px 371px;
 }
 
 /* Раздел Преимущества */
@@ -165,12 +171,20 @@ main {
   text-align: center;
 }
 
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1200px;
+  height: 261px;
+  background-color: #FFFFFF;
+}
+
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-
 }
 
 .advantages-item {
@@ -183,6 +197,8 @@ main {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 .hero-description {
@@ -190,6 +206,7 @@ main {
   line-height: 26px;
   font-weight: 400;
   color: #333333;
+  margin: 25px 0;
 }
 
 /* Раздел Преимущества Список */
