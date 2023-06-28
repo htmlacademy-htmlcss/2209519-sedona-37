@@ -65,11 +65,11 @@ main {
 .page-header {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
-  height: 64px;
+  width: auto;
+  height: auto;
+  padding: 0 70px;
   color: #000000;
   background-color: #FFFFFF;
-  margin-bottom: -6px;
   z-index: 1
 }
 
@@ -92,7 +92,7 @@ main {
 }
 
 .header-logo-img {
-  margin: 0 28px 0 70px;
+  margin: 0 28px 0 0;
 }
 
 .navigation-list {
@@ -106,9 +106,10 @@ main {
 
 .navigation-user {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
   width: 268px;
-  height: 64px;
+  height: 100%;
 }
 
 .navigation-link {
@@ -120,26 +121,20 @@ main {
   text-decoration: none;
 }
 
-.navigation-user-search {
-  width: 44px;
-  height: 64px;
-  background-image: url("../images/icons/search.svg");
-}
-
-.navigation-user-like {
-  width: 44px;
-  height: 64px;
-  background-image: url("../images/icons/like.svg");
-}
-
 .navigation-user-button {
-  width: 160px;
-  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .navigation-button {
-  width: 92px;
-  height: 20px;
+  width: 160px;
+  height: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 0;
+  border-radius: 4px;
   background-color: #756157;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -152,6 +147,7 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 1200px;
   height: 485px;
   background-image: url("../images/img/index-background.jpg");
   background-size: 100% auto;
