@@ -179,12 +179,13 @@ main {
   text-align: center;
   width: 1200px;
   height: 100%;
-  background-image: url("../images/img/index-background.jpg");
+  background-image: url("../images/img/index-divider.svg"), url("../images/img/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #3F5E72;
   margin: 0;
   padding: 51px 0 82px 0;
+  background-position: center bottom;
 }
 
 .hero-logo {
@@ -458,11 +459,6 @@ main {
   margin-bottom: 40px;
 }
 
-.main-inner .subscribe {
-  background-image: none;
-  background-color: #FFFFFF;
-}
-
 .subscribe-title {
   font-size: 30px;
   line-height: 36px;
@@ -471,6 +467,54 @@ main {
   text-transform: uppercase;
   margin: 0 0 20px;
   padding: 0;
+  border: 0;
+}
+
+
+.subscribe-description {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin: 0 0 54px;
+  padding: 0;
+  border: 0;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  width: 452px;
+  height: 52px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.field {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #F2F2F2;
+  max-width: 452px;
+  max-height: 52px;
+  margin: 0;
+  padding: 14px 213px 14px 20px;
+  border: 0;
+}
+
+.subscribe-button {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background-color: #82B3D3;
+  max-width: 232px;
+  max-height: 52px;
+  margin: 0;
+  padding: 8px 50px;
   border: 0;
 }
 
@@ -530,87 +574,60 @@ main {
 
 /* Каталог */
 
-.main-inner .subscribe-title {
-  color: #000000;
-}
-
-.inner-header-title {
-  margin: 0;
-}
-
-.subscribe-description {
-  font-size: 22px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #FFFFFF;
-  margin: 0 0 54px;
-  padding: 0;
-  border: 0;
-}
-
-.main-inner .subscribe-description {
-  color: #333333;
-}
-
-.subscribe-form {
+.main-inner {
   display: flex;
-  justify-content: center;
-  width: 452px;
-  height: 52px;
-  margin: 0;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
   padding: 0;
-  border: 0;
-}
-
-.field {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
+  background-color: #FFFFFF;
   color: #000000;
-  background-color: #F2F2F2;
-  max-width: 452px;
-  max-height: 52px;
-  margin: 0;
-  padding: 14px 213px 14px 20px;
-  border: 0;
-}
-
-.subscribe-button {
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 700;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  background-color: #82B3D3;
-  max-width: 232px;
-  max-height: 52px;
-  margin: 0;
-  padding: 8px 50px;
-  border: 0;
 }
 
 .filter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 1200px;
-  height: 412px;
+  padding: 35px 70px 70px;
+  box-sizing: border-box;
   background-image: url("../images/img/catalog-background.jpg");
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: #3F5E72;
+  color: #FFFFFF;
 }
 
 .filter {
-  padding: 35px 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-header {
+  width: 114px;
+  margin: 0;
+  padding: 0;
 }
 
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
-  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
-.breadcrumbs-link {
-  font-size: 16pt;
+.breadcrumbs {
+  display: block;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.breadcrumbs-item-hotels {
+  font-size: 16px;
   line-height: 21px;
   font-weight: 400;
   color: #FFFFFF;
@@ -618,10 +635,33 @@ main {
 
 .catalog-filter {
   display: flex;
+  flex-wrap: wrap;
+  width: 1060px;
+  margin: 0;
+  margin-top: auto;
 }
 
 .catalog-filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 170px;
+  padding: 0;
+  margin: 0;
   border: 0;
+}
+
+.catalog-filter-group-infrastructure {
+  margin-right: 70px;
+}
+
+.catalog-filter-group-type-of-housing {
+  margin-right: 140px;
+}
+
+.catalog-filter-group-cost {
+  flex-direction: column;
+  margin-right: 70px;
 }
 
 .catalog-filter-title {
@@ -629,6 +669,15 @@ main {
   line-height: 24px;
   font-weight: 700;
   color: #FFFFFF;
+  margin: 0 0 32px 0;
+}
+
+.catalog-filter-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 19px;
 }
 
 .control {
@@ -638,15 +687,42 @@ main {
   color: #FFFFFF;
 }
 
+.range-wrapper-inputs {
+  display: flex;
+  position: relative;
+  gap: 2px;
+}
+
+.catalog-filter-label {
+  position: relative;
+}
+
 .range-input {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+  width: 80px;
+  height: 48px;
+  margin: 0;
+  padding: 0 42px 0 21px;
+  border: none;
+  background-color: #F2F2F2;
 }
 
-.range-wrapper-inputs {
+.range-input-left {
+  border-radius: 4px 0 0 4px;
+}
+
+.range-input-right {
+  border-radius: 0 4px 4px 0;
+}
+
+.button-submit {
   display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 58px 0 0;
 }
 
 .button-apply {
@@ -801,4 +877,19 @@ main {
 
 .pagination {
   display: flex;
+}
+
+/* Раздел Подписка Каталога */
+
+.main-inner .subscribe {
+  background-image: none;
+  background-color: #FFFFFF;
+}
+
+.main-inner .subscribe-title {
+  color: #000000;
+}
+
+.main-inner .subscribe-description {
+  color: #333333;
 }
