@@ -179,12 +179,13 @@ main {
   text-align: center;
   width: 1200px;
   height: 100%;
-  background-image: url("../images/img/index-background.jpg");
+  background-image: url("../images/img/index-divider.svg"), url("../images/img/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #3F5E72;
   margin: 0;
   padding: 51px 0 82px 0;
+  background-position: center bottom;
 }
 
 .hero-logo {
