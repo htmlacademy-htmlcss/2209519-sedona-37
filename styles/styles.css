@@ -21,10 +21,11 @@ html {
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 21px;
+  color: #000000;
   background-color: #F2F2F2;
   margin: 0;
-  padding: 0;
+  padding: 0 40px 0;
   height: 100%;
 }
 
@@ -58,6 +59,24 @@ main {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.img {
+  max-width: 100%;
+  display: block;
 }
 
 /* Хедер */
@@ -159,17 +178,19 @@ main {
   align-items: center;
   text-align: center;
   width: 1200px;
-  height: 485px;
+  height: 100%;
   background-image: url("../images/img/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #3F5E72;
   margin: 0;
-  padding: 0;
+  padding: 51px 0 82px 0;
 }
 
-.hero-logo-img {
-  margin: 51px 371px 82px 371px;
+.hero-logo {
+  width: 458px;
+  height: 352px;
+  margin: 0;
 }
 
 /* Раздел Преимущества */
@@ -737,6 +758,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -758,6 +780,10 @@ main {
   background-color: #82B3D3;
   padding: 0;
   border: 0;
+}
+
+.button-current {
+  background-color: #7DB54F;
 }
 
 .hotels-card-rating-text {
