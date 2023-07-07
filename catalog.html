@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Каталог</title>
+    <title>Гостиницы Седоны</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -14,7 +14,7 @@
       <!-- Хедер Каталога -->
 
       <header class="page-header" data-test="header">
-        <h1 class="visually-hidden">Седона - туристический городок в штате Аризона.</h1>
+        <h1 class="visually-hidden">Гостиницы Седоны.</h1>
 
         <!-- Навигация Каталога -->
 
@@ -124,7 +124,7 @@
 
                 <!-- Фильтр Инфраструктура -->
 
-                <fieldset class="catalog-filter-group">
+                <fieldset class="catalog-filter-group catalog-filter-group-infrastructure">
                   <legend class="catalog-filter-title">Инфраструктура:</legend>
 
                   <ul class="catalog-filter-list no-bullet">
@@ -156,7 +156,7 @@
 
                 <!-- Фильтр Тип Жилья -->
 
-                <fieldset class="catalog-filter-group">
+                <fieldset class="catalog-filter-group catalog-filter-group-type-of-housing">
                   <legend class="catalog-filter-title">Тип Жилья:</legend>
 
                   <ul class="catalog-filter-list no-bullet">
@@ -188,38 +188,30 @@
 
                 <!-- Фильтр Стоимость -->
 
-                <fieldset class="catalog-filter-group">
+                <fieldset class="catalog-filter-group catalog-filter-group-cost">
                   <legend class="catalog-filter-title">Стоимость, ₽:</legend>
 
-                  <div class="range">
+                  <div class="range-wrapper-inputs">
 
-                    <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      <input class="range-input range-input-left" type="number" value="0" name="min-price">
+                    </label>
 
-                      <label class="catalog-filter-label">
-                        <input class="range-input" type="number" value="0" name="min-price">
-                      </label>
+                    <label class="catalog-filter-label">
+                      <input class="range-input range-input-right" type="number" value="9000" name="max-price">
+                    </label>
 
-                      <label class="catalog-filter-label">
-                        <input class="range-input" type="number" value="9000" name="max-price">
-                      </label>
+                  </div>
 
-                    </div>
+                  <div class="range-scale">
 
-                    <div class="range-scale">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
 
-                      <div class="range-bar" style="left: 0; width: 206px">
-
-                        <button class="range-toggle toggle-min">
-                          <span class="visually-hidden">Изменить минимальную цену.</span>
-                        </button>
-
-                        <button class="range-toggle toggle-max">
-                          <span class="visually-hidden">Изменить максимальную цену.</span>
-                        </button>
-
-                      </div>
-
-                    </div>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
 
                   </div>
 
@@ -227,7 +219,7 @@
 
                 <!-- Секция Кнопок ПРИМЕНИТЬ и СБРОСИТЬ -->
 
-                <section class="button-submit">
+                <div class="button-submit">
                   <h3 class="visually-hidden">Кнопки Применить и Сбросить.</h3>
 
                   <!-- Кнопка ПРИМЕНИТЬ  -->
@@ -239,7 +231,7 @@
                   <div class="button-throw-off"><button class="button button-throw-off" type="submit">Сбросить</button>
                   </div>
 
-                </section>
+                </div>
 
               </form>
 
