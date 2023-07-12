@@ -459,7 +459,6 @@ main {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #3F5E72;
-  margin-bottom: 40px;
 }
 
 .subscribe-title {
@@ -527,30 +526,49 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: auto;
-  height: 100%;
+  width: 1200px;
+  min-height: 40px;
   background-color: #FFFFFF;
   text-align: center;
-  padding: 0 70px;
-  margin-bottom: 30px;
+  padding: 40px 70px 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .footer-social {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  max-width: 400px;
+  text-align: start;
 }
 
 .footer-social-list {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-social-item {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: block;
+  min-width: 47px;
+  min-height: 40px;
+}
+
+.footer-social-link {
+  display: block;
+  width: 48px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.footer-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .footer-contacts-address {
@@ -566,6 +584,8 @@ main {
   font-weight: 400;
   color: #000000;
   text-decoration: none;
+  text-transform: uppercase;
+  font-style: normal;
 }
 
 /* Каталог */
