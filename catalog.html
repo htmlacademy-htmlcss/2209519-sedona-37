@@ -163,21 +163,21 @@
 
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="type-of-accommodation" value="hotel" checked>
+                        <input class="control-input" type="radio" name="type-of-housing" value="hotel" checked>
                         Гостиница
                       </label>
                     </li>
 
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="type-of-accommodation" value="motel">
+                        <input class="control-input" type="radio" name="type-of-housing" value="motel">
                         Мотель
                       </label>
                     </li>
 
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="type-of-accommodation" value="apartment">
+                        <input class="control-input" type="radio" name="type-of-housing" value="apartment">
                         Апартаменты
                       </label>
                     </li>
@@ -195,23 +195,29 @@
 
                     <label class="catalog-filter-label">
                       <input class="range-input range-input-left" type="number" value="0" name="min-price">
+                      <span class="catalog-filter-label-text">от</span>
                     </label>
 
                     <label class="catalog-filter-label">
                       <input class="range-input range-input-right" type="number" value="9000" name="max-price">
+                      <span class="catalog-filter-label-text">до</span>
                     </label>
 
                   </div>
 
                   <div class="range-scale">
 
-                    <button class="range-toggle toggle-min">
-                      <span class="visually-hidden">Изменить минимальную цену.</span>
-                    </button>
+                    <div class="range-scale-track">
 
-                    <button class="range-toggle toggle-max">
-                      <span class="visually-hidden">Изменить максимальную цену.</span>
-                    </button>
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+
+                    </div>
 
                   </div>
 
@@ -224,12 +230,11 @@
 
                   <!-- Кнопка ПРИМЕНИТЬ  -->
 
-                  <div class="button-apply"><button class="button button-apply" type="submit">Применить</button></div>
+                  <button class="button button-apply" type="submit">Применить</button>
 
                   <!-- Кнопка СБРОСИТЬ  -->
 
-                  <div class="button-throw-off"><button class="button button-throw-off" type="submit">Сбросить</button>
-                  </div>
+                  <button class="button button-throw-off" type="submit">Сбросить</button>
 
                 </div>
 
