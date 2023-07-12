@@ -63,14 +63,16 @@ main {
 
 .button {
   display: inline-block;
-  padding: 8px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 700;
   text-align: center;
   color: #FFFFFF;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 8px 50px;
   border-radius: 4px;
-  border: none;
   cursor: pointer;
 }
 
@@ -550,13 +552,6 @@ main {
   align-items: center;
 }
 
-.button {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 10px;
-}
-
 .footer-contacts-address {
   display: flex;
   align-items: center;
@@ -718,31 +713,63 @@ main {
   border-radius: 0 4px 4px 0;
 }
 
+.catalog-filter-label-text {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 12px;
+  right: 21px;
+  z-index: 2;
+}
+
+.range-scale {
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin-top: 36px;
+}
+
+.range-scale-track {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #FFFFFF 75%, rgba(255, 255, 255, .3) 25%);
+}
+
+.range-toggle {
+  display: flex;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  top: -8px;
+}
+
+.toggle-max {
+  right: calc(25% - 10px);
+}
+
 .button-submit {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  margin: 0;
-  padding: 58px 0 0;
+  justify-content: end;
+  gap: 32px;
 }
 
 .button-apply {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  color: #FFFFFF;
   background-color: #82B3D3;
   border: 0;
-  text-transform: uppercase;
 }
 
 .button-throw-off {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  color: #FFFFFF;
   background-color: transparent;
   border: 0;
-  text-transform: uppercase;
 }
 
 /* Секция Каталога Контроль Результатов Поиска */
@@ -796,6 +823,16 @@ main {
   border: 1px solid #E6E6E6;
   border-radius: 4px;
 }
+
+/*
+.hotels-card-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+*/
 
 .hotels-card-image {
   display: block;
