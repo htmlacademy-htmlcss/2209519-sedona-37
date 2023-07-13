@@ -122,7 +122,6 @@ main {
 
 .navigation-item {
   margin: 0;
-  padding: 20px 16px;
 }
 
 .navigation-user {
@@ -134,14 +133,29 @@ main {
 }
 
 .navigation-link {
+  position: relative;
   display: block;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  margin-block: 0;
+  padding-inline: 0;
+  padding: 20px 16px;
   color: #000000;
   text-align: center;
   background-color: #FFFFFF;
   text-decoration: none;
+  box-sizing: border-box;
+}
+
+.navigation-underline::before {
+  position: absolute;
+  content: "";
+  left: 16px;
+  right: 16px;
+  bottom: 0;
+  height: 2px;
+  background-color: #756257;
 }
 
 .navigation-icon {
@@ -165,6 +179,7 @@ main {
   height: 100%;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 700;
   padding: 8px 0;
   border-radius: 4px;
   background-color: #756157;
