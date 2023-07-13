@@ -836,6 +836,46 @@ main {
   background-repeat: no-repeat;
   background-position: right 20px bottom 21px;
   appearance: none;
+  cursor: pointer;
+}
+
+.select-control:hover {
+  outline: 2px solid #68a2ca;
+  outline-offset: -2px;
+}
+
+.select-control-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+  padding: 12px 14px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  outline: 2px solid #e5e5e5;
+  outline-offset: -2px;
+  border-radius: 4px;
+}
+
+.select-control-view-active {
+  outline: 2px solid #000000;
+  outline-offset: -2px;
+}
+
+.select-control-view:hover {
+  outline: 2px solid #000000;
+  outline-offset: -2px;
+}
+
+.select-control-view:focus {
+  outline: 2px solid #68A2CA;
+  outline-offset: -2px;
+}
+
+.select-control-view:last-child {
+  margin-right: 0;
 }
 
 /* Карточки Гостиниц */
