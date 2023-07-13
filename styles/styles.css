@@ -801,7 +801,9 @@ main {
 
 .found-container {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 1060px;
   margin-bottom: 40px;
 }
 
@@ -810,17 +812,30 @@ main {
   line-height: 36px;
   font-weight: 700;
   color: #000000;
+  text-align: center;
+  margin: 6px auto 6px 0;
   text-transform: uppercase;
 }
 
 .select-control {
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
+  text-align: start;
   width: 292px;
-  border: 2px solid #E5E5E5;
+  margin-right: 70px;
+  padding: 14px 42px 14px 20px;
+  outline: 2px solid #E5E5E5;
+  outline-offset: -2px;
   border-radius: 4px;
+  border: none;
+  box-sizing: border-box;
+  background-image: url(../images/icons/icon-select-control.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px bottom 21px;
+  appearance: none;
 }
 
 /* Карточки Гостиниц */
