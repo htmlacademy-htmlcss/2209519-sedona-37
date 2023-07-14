@@ -86,9 +86,9 @@ main {
 .page-header {
   display: flex;
   justify-content: space-between;
-  width: auto;
+  width: 1200px;
   height: auto;
-  padding: 0 70px;
+  margin: 0 auto;
   color: #000000;
   background-color: #FFFFFF;
   z-index: 1
@@ -113,11 +113,16 @@ main {
 }
 
 .header-logo-img {
-  margin: 0 28px 0 0;
+  margin: 0 28px 0 70px;
 }
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 .navigation-item {
@@ -126,10 +131,13 @@ main {
 
 .navigation-user {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
   align-items: center;
-  width: 268px;
-  height: 100%;
+  margin-left: auto;
+  margin-right: 70px;
+  box-sizing: border-box;
+  padding-inline: 0;
+  margin-block: 0;
 }
 
 .navigation-link {
@@ -138,6 +146,7 @@ main {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  min-height: 64px;
   margin-block: 0;
   padding-inline: 0;
   padding: 20px 16px;
@@ -159,12 +168,36 @@ main {
 }
 
 .navigation-icon {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  fill: #dbdbdb;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 24px;
+  left: 14px;
+  fill: #000000;
+}
+
+.like-number {
+  position: absolute;
+  content: "";
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 400;
+  width: 20px;
+  height: 20px;
+  padding: 6px 4px;
+  top: 11px;
+  left: 20px;
+  text-align: center;
+  background-color: #7db54f;
+  color: #ffffff;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.navigation-user-item {
+  display: block;
+  width: 44px;
+  box-sizing: border-box;
 }
 
 .navigation-user-button {
@@ -177,14 +210,17 @@ main {
 .navigation-button {
   width: 160px;
   height: 100%;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+  margin-left: 20px;
   padding: 8px 0;
   border-radius: 4px;
   background-color: #756157;
   color: #FFFFFF;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 /* Раздел Герой Главной страницы */
