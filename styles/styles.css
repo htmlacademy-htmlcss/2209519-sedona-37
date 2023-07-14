@@ -277,6 +277,21 @@ main {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 62px;
+  position: relative;
+}
+
+.advantages-title::after {
+  position: absolute;
+  content: "";
+  left: calc(50% - 30px);
+  bottom: -32px;
+  width: 60px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.advantages-title-underline::after {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .advantages-item-text .advantages-title {
