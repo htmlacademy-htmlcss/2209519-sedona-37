@@ -23,10 +23,12 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #F2F2F2;
+  min-width: 1280px;
+  height: 100%;
   margin: 0;
   padding: 0 40px 0;
-  height: 100%;
+  background-color: #F2F2F2;
+  box-sizing: border-box;
 }
 
 .container {
@@ -89,9 +91,11 @@ main {
   width: 1200px;
   height: auto;
   margin: 0 auto;
+  padding: 0 70px;
   color: #000000;
   background-color: #FFFFFF;
-  z-index: 1
+  z-index: 1;
+  box-sizing: border-box;
 }
 
 .navigation {
@@ -113,7 +117,7 @@ main {
 }
 
 .header-logo-img {
-  margin: 0 28px 0 70px;
+  margin: 0 28px 0 0;
 }
 
 .navigation-list {
@@ -134,7 +138,6 @@ main {
   flex-direction: row;
   align-items: center;
   margin-left: auto;
-  margin-right: 70px;
   box-sizing: border-box;
   padding-inline: 0;
   margin-block: 0;
@@ -167,10 +170,19 @@ main {
   background-color: #756257;
 }
 
-.navigation-icon {
+.navigation-icon-search {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 22px;
+  left: 14px;
+  fill: #000000;
+}
+
+.navigation-icon-like {
   position: absolute;
   width: 18px;
-  height: 18px;
+  height: 17px;
   top: 24px;
   left: 14px;
   fill: #000000;
@@ -186,7 +198,7 @@ main {
   height: 20px;
   padding: 6px 4px;
   top: 11px;
-  left: 20px;
+  left: 21px;
   text-align: center;
   background-color: #7db54f;
   color: #ffffff;
