@@ -38,6 +38,7 @@ body {
   min-height: 100%;
   margin: 0 auto;
   background-color: #FFFFFF;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 main {
@@ -585,6 +586,7 @@ main {
 }
 
 .subscribe-button {
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
