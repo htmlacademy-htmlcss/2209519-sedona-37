@@ -236,6 +236,18 @@ main {
   text-decoration: none;
 }
 
+.navigation-button:hover {
+  background-color: #615048;
+}
+
+.navigation-button:focus {
+  background-color: #615048;
+}
+
+.navigation-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 /* Раздел Герой Главной страницы */
 
 .hero {
@@ -511,8 +523,8 @@ main {
 }
 
 .search-link {
+  display: inline-block;
   width: 276px;
-  min-height: 36px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -522,7 +534,18 @@ main {
   text-transform: uppercase;
   background-color: #756157;
   border-radius: 4px;
-  box-sizing: border-box;
+}
+
+.search-link:hover {
+  background-color: #615048;
+}
+
+.search-link:focus {
+  background-color: #615048;
+}
+
+.search-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Раздел Подписка */
