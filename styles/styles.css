@@ -556,7 +556,7 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 414px;
+  padding: 96px 258px 104px;
   background-image: url("../images/img/subscribe-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -580,7 +580,7 @@ main {
   line-height: 26px;
   font-weight: 400;
   color: #FFFFFF;
-  margin: 0 0 54px;
+  margin: 0 70px 54px;
   padding: 0;
   border: 0;
 }
@@ -588,24 +588,44 @@ main {
 .subscribe-form {
   display: flex;
   justify-content: center;
-  width: 452px;
-  height: 52px;
+  width: 684px;
   margin: 0;
   padding: 0;
   border: 0;
 }
 
 .field {
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   color: #000000;
   background-color: #F2F2F2;
-  max-width: 452px;
+  width: 452px;
   max-height: 52px;
   margin: 0;
   padding: 14px 213px 14px 20px;
-  border: 0;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.field:hover {
+  background-color: #E6E6E6;
+  outline: 2px solid #82B3D3;
+  outline-offset: -2px;
+}
+
+.field:focus-visible {
+  background-color: #E6E6E6;
+  outline: 2px solid #82B3D3;
+  outline-offset: -2px;
+}
+
+.field:active {
+  background-color: #F2F2F2;
+  color: #000000;
+  outline: 2px solid #000000;
+  outline-offset: -2px;
 }
 
 .subscribe-button {
@@ -616,11 +636,27 @@ main {
   color: #FFFFFF;
   text-transform: uppercase;
   background-color: #82B3D3;
-  max-width: 232px;
-  max-height: 52px;
+  width: 232px;
   margin: 0;
   padding: 8px 50px;
-  border: 0;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.subscribe-button:hover {
+  background-color: #68A2CA;
+}
+
+.subscribe-button:focus-visible {
+  background-color: #68A2CA;
+  outline: 2px solid #68A2CA;
+}
+
+.subscribe-button:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Подвал */
@@ -630,7 +666,6 @@ main {
   justify-content: space-between;
   align-items: center;
   width: 1200px;
-  min-height: 40px;
   background-color: #FFFFFF;
   text-align: center;
   padding: 40px 70px 30px;
