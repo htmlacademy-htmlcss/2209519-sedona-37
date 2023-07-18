@@ -987,6 +987,12 @@ main {
   background-color: #F2F2F2;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .range-input-left {
   border-radius: 4px 0 0 4px;
 }
@@ -1222,16 +1228,6 @@ main {
   border: 1px solid #E6E6E6;
   border-radius: 4px;
 }
-
-/*
-.hotels-card-link {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-}
-*/
 
 .hotels-card-image {
   display: block;
