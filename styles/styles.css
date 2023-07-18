@@ -161,6 +161,14 @@ main {
   box-sizing: border-box;
 }
 
+.navigation-link:hover {
+  color: #333333
+}
+
+.navigation-link:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .navigation-underline::before {
   position: absolute;
   content: "";
@@ -179,6 +187,19 @@ main {
   left: 14px;
   fill: #000000;
 }
+
+.navigation-icon-search:hover {
+  fill: #333333;
+}
+
+.navigation-icon-search:focus-visible {
+  fill: #333333;
+}
+
+.navigation-icon-search:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
 
 .navigation-icon-like {
   position: absolute;
@@ -698,6 +719,19 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+}
+
+.footer-social-link:hover path {
+  fill: #68A2CA;
+}
+
+.footer-social-link:focus-visible path {
+  fill: #68A2CA;
+  ;
+}
+
+.footer-social-link:active path {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-icon {
