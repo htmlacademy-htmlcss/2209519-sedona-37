@@ -162,11 +162,27 @@ main {
 }
 
 .navigation-link:hover {
-  color: #333333
+  color: #756157;
+}
+
+.navigation-link:hover path {
+  fill: #756157;
+}
+
+.navigation-link:focus-visible {
+  color: #756157;
+}
+
+.navigation-link:focus-visible path {
+  fill: #756157;
 }
 
 .navigation-link:active {
   color: rgba(117, 97, 87, 0.3);
+}
+
+.navigation-link:active path {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .navigation-underline::before {
@@ -187,19 +203,6 @@ main {
   left: 14px;
   fill: #000000;
 }
-
-.navigation-icon-search:hover {
-  fill: #333333;
-}
-
-.navigation-icon-search:focus-visible {
-  fill: #333333;
-}
-
-.navigation-icon-search:active {
-  fill: rgba(117, 97, 87, 0.3);
-}
-
 
 .navigation-icon-like {
   position: absolute;
@@ -222,8 +225,8 @@ main {
   top: 11px;
   left: 21px;
   text-align: center;
-  background-color: #7db54f;
-  color: #ffffff;
+  background-color: #7DB54F;
+  color: #FFFFFF;
   border-radius: 50%;
   box-sizing: border-box;
 }
@@ -727,7 +730,6 @@ main {
 
 .footer-social-link:focus-visible path {
   fill: #68A2CA;
-  ;
 }
 
 .footer-social-link:active path {
@@ -758,6 +760,30 @@ main {
   text-decoration: none;
   text-transform: uppercase;
   font-style: normal;
+}
+
+.footer-contacts-address-phone:hover {
+  color: #756157;
+}
+
+.footer-contacts-address-phone:focus-visible {
+  color: #756157;
+}
+
+.footer-contacts-address-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.htmlacademy-link:hover path {
+  fill: #756157;
+}
+
+.htmlacademy-link:focus-visible path {
+  fill: #756157;
+}
+
+.htmlacademy-link:active path {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /* Каталог */
@@ -870,10 +896,6 @@ main {
   gap: 19px;
 }
 
-.control-input:focus + .control-check {
-  outline: 2px solid #83B3D3;
-}
-
 .control {
   display: block;
   position: relative;
@@ -882,6 +904,23 @@ main {
   font-weight: 400;
   color: #FFFFFF;
   padding-left: 36px;
+  cursor: pointer;
+}
+
+.control:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.control:focus-visible {
+  color: #FFFFFF;
+}
+
+.control:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input:focus + .control-check {
+  outline: 2px solid #83B3D3;
 }
 
 .control-input[type="checkbox"]:checked + .control-check::before {
@@ -935,6 +974,7 @@ main {
 }
 
 .range-input {
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -1010,6 +1050,7 @@ main {
   border-radius: 5px;
   border: 2px solid transparent;
   top: -8px;
+  cursor: pointer;
 }
 
 .toggle-max {
@@ -1029,9 +1070,50 @@ main {
   border: 0;
 }
 
+.button-apply:hover {
+  background-color: #68A2CA;
+}
+
+.button-apply:focus-visible {
+  background-color: #68A2CA;
+  outline: transparent;
+}
+
+.button-apply:active {
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-apply:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
+}
+
 .button-throw-off {
   background-color: transparent;
   border: 0;
+}
+
+.button-throw-off:hover {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button-throw-off:focus-visible {
+  background-color: transparent;
+  outline: 3px solid #82b3d3;
+  outline-offset: -3px;
+  padding: 5px 53px;
+}
+
+.button-throw-off:active {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-throw-off:disabled {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.1);
 }
 
 /* Секция Каталога Контроль Результатов Поиска */
@@ -1195,6 +1277,7 @@ main {
   color: #FFFFFF;
   border-radius: 4px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .button-more {
@@ -1202,6 +1285,29 @@ main {
   text-decoration: none;
   background-color: #756157;
   text-align: center;
+}
+
+.button-more:hover {
+  background-color: #615048;
+  outline: 2px solid #615048;
+  outline-offset: -2px;
+}
+
+.button-more:focus-visible {
+  background-color: #615048;
+  outline: 2px solid #615048;
+  outline-offset: -2px;
+}
+
+.button-more:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+  outline: 2px solid #756157;
+  outline-offset: -2px;
+}
+
+.button-more:disabled {
+  background-color: #E5E5E5;
 }
 
 .button-favourites {
@@ -1214,6 +1320,29 @@ main {
 
 .button-current {
   background-color: #7DB54F;
+}
+
+.button-current:hover {
+  background-color: #6C9E42;
+  outline: 2px solid #6C9E42;
+  outline-offset: -2px;
+}
+
+.button-current:focus-visible {
+  background-color: #6C9E42;
+  outline: 2px solid #6C9E42;
+  outline-offset: -2px;
+}
+
+.button-current:active {
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
+  outline: 2px solid #7DB54F;
+  outline-offset: -2px;
+}
+
+.button-current:disabled {
+  background-color: #E5E5E5;
 }
 
 .hotels-card-rating-text {
