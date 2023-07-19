@@ -302,7 +302,6 @@ main {
   flex-direction: column;
   justify-content: center;
   width: 1200px;
-  height: 261px;
   background-color: #FFFFFF;
 }
 
@@ -311,7 +310,8 @@ main {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  margin: 0;
+  margin: 0 0 25px;
+  padding: 69px 290px 0;
   text-transform: uppercase;
 }
 
@@ -320,7 +320,8 @@ main {
   line-height: 26px;
   font-weight: 400;
   color: #333333;
-  margin: 25px 0;
+  margin: 0 0 90px;
+  padding: 0 74px;
 }
 
 /* Раздел Преимущества Список */
@@ -355,7 +356,7 @@ main {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 2px 0 0;
   margin-bottom: 62px;
   position: relative;
 }
@@ -397,7 +398,7 @@ main {
   width: 230px;
   height: 100%;
   background-color: #83B3D31F;
-  padding: 103px 85px;
+  padding: 113px 85px;
 }
 
 .advantages-item-dark-theme {
@@ -407,7 +408,7 @@ main {
   width: 230px;
   height: 100%;
   background-color: #83B3D333;
-  padding: 103px 85px;
+  padding: 113px 85px;
 }
 
 .advantages-photo {
@@ -472,7 +473,7 @@ main {
   background-image: url("../images/icons/souvenirs.svg");
   background-size: 64px 76px;
   background-repeat: no-repeat;
-  background-position: 163px 80px;
+  background-position: 168px 78px;
 }
 
 .recommendations-item-light-theme {
@@ -599,7 +600,7 @@ main {
   line-height: 26px;
   font-weight: 400;
   color: #FFFFFF;
-  margin: 0 70px 54px;
+  margin: 1px 70px 56px;
   padding: 0;
   border: 0;
 }
@@ -687,7 +688,7 @@ main {
   width: 1200px;
   background-color: #FFFFFF;
   text-align: center;
-  padding: 40px 70px 30px;
+  padding: 42px 70px 30px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -757,6 +758,10 @@ main {
   font-style: normal;
 }
 
+.htmlacademy-link {
+  margin-top: 4px;
+}
+
 .footer-contacts-address-phone:hover {
   color: #756157;
 }
@@ -796,6 +801,7 @@ main {
 .filter-container {
   width: 1200px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .inner-header {
@@ -803,9 +809,8 @@ main {
   flex-direction: column;
   align-items: flex-start;
   width: 1200px;
-  min-height: 412px;
   margin: 0;
-  padding: 0 70px 70px;
+  padding: 0 70px 72px;
   box-sizing: border-box;
   background-image: url("../images/img/catalog-background.jpg");
   background-size: cover;
@@ -878,7 +883,6 @@ main {
 
 .catalog-filter {
   display: flex;
-  flex-wrap: wrap;
   width: 1060px;
   margin: 0;
   margin-top: auto;
@@ -904,7 +908,7 @@ main {
 
 .catalog-filter-group-cost {
   margin-right: 70px;
-  gap: 10px;
+  gap: 7px;
 }
 
 .catalog-filter-title {
@@ -920,7 +924,7 @@ main {
   flex-direction: column;
   margin: 0;
   padding: 0;
-  gap: 19px;
+  gap: 16px;
 }
 
 .control {
@@ -1095,7 +1099,7 @@ input::-webkit-inner-spin-button {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: end;
-  gap: 35px;
+  gap: 30px;
 }
 
 .button-apply {
@@ -1152,7 +1156,7 @@ input::-webkit-inner-spin-button {
 /* Секция Каталога Контроль Результатов Поиска */
 
 .catalog {
-  padding: 50px 70px 60px 70px;
+  padding: 50px 70px 58px 70px;
 }
 
 .found-container {
